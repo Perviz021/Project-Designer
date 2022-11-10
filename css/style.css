@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 5000px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header {
+  background: url("https://wallpaperaccess.com/full/2076086.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 800px;
+  position: relative;
+}
+header .layout {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  height: 100px;
+}
+nav .menu {
+  width: 70%;
+  display: flex;
+  padding-top: 10px;
+}
+nav .menu li {
+  display: inline-block;
+  margin-left: 10px;
+}
+nav .menu li a {
+  color: #fff;
+  padding: 15px;
+  padding-top: 9px;
+  transition: 0.3s all linear;
+}
+nav .menu li a:hover {
+  color: #ff565b;
+}
+
+.headerText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+.headerText h6 {
+  font-weight: bold;
+  font-size: 1.4em;
+  letter-spacing: 3px;
+}
+.headerText h2 {
+  font-size: 3em;
+}
+.headerText h2 span {
+  color: #ff565b;
+}
+.headerText button {
+  background-color: #fff;
+  font-size: 0.9em;
+  color: #ff565b;
+  transition: 0.3s all linear;
+  margin-top: 30px;
+}
+.headerText button:hover {
+  background-color: #ff565b;
+  color: #fff;
+}
+
+.active {
+  color: #ff565b !important;
+  border-top: 2px solid #ff565b;
+  background-color: #fff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#search {
+  padding: 50px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  position: relative;
+  top: -140px;
+  background-color: #fff;
+}
+#search .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+#search .wrapper > div {
+  width: 20%;
+}
+#search .wrapper > div input,
+#search .wrapper > div select {
+  width: 100%;
+  display: block;
+  margin: 15px 0;
+  font-size: 0.9em;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+#search .wrapper > div label {
+  font-weight: bold;
+}
+#search .searchBtn {
+  width: 100%;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #ff565b;
+  transition: 0.3s all linear;
+  margin: 20px 0;
+  font-size: 0.9em;
+}
+#search .searchBtn:hover {
+  background-color: rgba(0, 0, 0, 0.562);
+}/*# sourceMappingURL=style.css.map */
