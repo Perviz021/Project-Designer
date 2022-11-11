@@ -1,0 +1,83 @@
+@import "./variables";
+
+// START OF EXPLORE
+
+#explore {
+  .top {
+    margin-bottom: 30px;
+
+    h2 {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 2.1rem;
+
+      &:nth-child(2) {
+        color: $main-color;
+
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 80px;
+          height: 2px;
+          background-color: $main-color;
+          margin-right: 30px;
+          position: relative;
+          bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+#explore {
+  .left {
+    height: 700px;
+    background: url("../images/left.jpg");
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px;
+  }
+  .right {
+    margin-left: 70px;
+    .inner {
+      width: 100%;
+      margin-bottom: 70px;
+
+      h4 {
+        font-weight: bold;
+        font-size: 1.3em;
+        border-bottom: 2px solid #eeeeee;
+        padding-bottom: 10px;
+      }
+
+      p {
+        color: $text-color;
+        margin: 20px 0;
+      }
+      i {
+        margin-right: 10px;
+        color: $text-color;
+        font-size: 1.2em;
+      }
+      a {
+        color: #000;
+        margin: 20px 15px 20px 0;
+        font-size: 1.1em;
+        font-weight: bold;
+        transition: all 0.3s linear;
+        i {
+          margin-left: 5px;
+          font-size: 1em;
+          color: #000;
+          transition: all 0.3s linear;
+        }
+
+        &:hover,
+        &:hover i {
+          color: $main-color;
+        }
+      }
+    }
+  }
+}
+// END OF EXPLORE

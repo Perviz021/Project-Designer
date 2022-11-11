@@ -1,155 +1,90 @@
-$main-color: #ff565b;
+@import "./resets";
+@import "./variables";
+@import "./header";
+@import "./search";
+@import "./explore";
+@import "./trending";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-body {
-  height: 5000px;
-}
-html {
-  scroll-behavior: smooth;
-}
-a {
-  text-decoration: none;
-}
-ul {
-  list-style-type: none;
-}
-
-// START OF HEADER PART
-header {
-  background: url("https://wallpaperaccess.com/full/2076086.jpg");
+// START OF CONTACT SECTION
+#contact {
+  background: url("../images/map.jpg");
   background-size: cover;
   background-position: center center;
-  height: 800px;
-  position: relative;
+  height: 960px;
+  margin-top: 100px;
+  padding: 15% 10%;
 
-  .layout {
-    background-color: rgba($color: #000, $alpha: 0.5);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-}
-nav {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  height: 100px;
+  .wrapper {
+    .left {
+      background-color: #fff;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      padding: 50px;
+      position: relative;
+      left: 12px;
 
-  .menu {
-    width: 70%;
-    display: flex;
-    padding-top: 10px;
-    li {
-      display: inline-block;
-      margin-left: 10px;
-      a {
-        color: #fff;
-        padding: 15px;
-        padding-top: 9px;
-        transition: 0.3s all linear;
+      .top {
+        h2 {
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 2.1rem;
 
-        &:hover {
-          color: $main-color;
+          span {
+            color: $main-color;
+
+            &::before {
+              content: "";
+              display: inline-block;
+              width: 80px;
+              height: 2px;
+              background-color: $main-color;
+              margin-right: 30px;
+              position: relative;
+              bottom: 10px;
+            }
+          }
+        }
+      }
+      .form {
+        input,
+        textarea {
+          border-radius: 5px;
+          color: $text-color;
+          font-size: 0.9em;
+          border: 1px solid #ddd;
+          margin: 10px 0;
+          padding: 10px;
+        }
+        input {
+          margin-right: 10px;
+        }
+        textarea {
+          width: 100%;
+        }
+
+        .btnSend {
+          background-color: $main-color;
+          font-size: 0.9em;
+          color: #fff;
+          transition: 0.3s all linear;
+          margin-top: 30px;
+          width: 100%;
+
+          &:hover {
+            background-color: rgba(0, 0, 0, 0.562);
+          }
         }
       }
     }
-  }
-}
+    .right {
+      position: relative;
+      right: 12px;
 
-.headerText {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #fff;
-  font-weight: bold;
-
-  h6 {
-    font-weight: bold;
-    font-size: 1.4em;
-    letter-spacing: 3px;
-  }
-  h2 {
-    font-size: 3em;
-
-    span {
-      color: $main-color;
-    }
-  }
-  button {
-    background-color: #fff;
-    font-size: 0.9em;
-    color: $main-color;
-    transition: 0.3s all linear;
-    margin-top: 30px;
-
-    &:hover {
-      background-color: $main-color;
-      color: #fff;
-    }
-  }
-}
-
-.active {
-  color: $main-color !important;
-  border-top: 2px solid $main-color;
-  background-color: #fff;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-// END OF HEADER PART
-
-// START OF SEARCH PART
-#search {
-  padding: 50px;
-  box-shadow: 0px 0px 10px rgba($color: #000000, $alpha: 0.5);
-  border-radius: 10px;
-  position: relative;
-  top: -140px;
-  background-color: #fff;
-
-  .wrapper {
-    display: flex;
-    justify-content: space-between;
-    > div {
-      width: 20%;
-
-      input,
-      select {
-        width: 100%;
-        display: block;
-        margin: 15px 0;
-        font-size: 0.9em;
-        padding: 5px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        outline: none;
-      }
-
-      label {
-        font-weight: bold;
+      iframe {
+        border-top-right-radius: 10px !important;
+        border-bottom-right-radius: 10px !important;
       }
     }
   }
-  .searchBtn {
-    width: 100%;
-    border-radius: 5px;
-    color: #fff;
-    background-color: $main-color;
-    transition: 0.3s all linear;
-    margin: 20px 0;
-    font-size: 0.9em;
-
-    &:hover {
-      background-color: rgba(0, 0, 0, 0.562);
-    }
-  }
 }
+// END OF CONTACT SECTION

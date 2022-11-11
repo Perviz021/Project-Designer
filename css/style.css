@@ -9,10 +9,6 @@ body {
   height: 5000px;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 a {
   text-decoration: none;
 }
@@ -22,7 +18,7 @@ ul {
 }
 
 header {
-  background: url("https://wallpaperaccess.com/full/2076086.jpg");
+  background: url("../images/header.jpg");
   background-size: cover;
   background-position: center center;
   height: 800px;
@@ -142,4 +138,255 @@ nav .menu li a:hover {
 }
 #search .searchBtn:hover {
   background-color: rgba(0, 0, 0, 0.562);
+}
+
+#explore .top {
+  margin-bottom: 30px;
+}
+#explore .top h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2.1rem;
+}
+#explore .top h2:nth-child(2) {
+  color: #ff565b;
+}
+#explore .top h2:nth-child(2)::before {
+  content: "";
+  display: inline-block;
+  width: 80px;
+  height: 2px;
+  background-color: #ff565b;
+  margin-right: 30px;
+  position: relative;
+  bottom: 10px;
+}
+
+#explore .left {
+  height: 700px;
+  background: url("../images/left.jpg");
+  background-size: cover;
+  background-position: center center;
+  border-radius: 10px;
+}
+#explore .right {
+  margin-left: 70px;
+}
+#explore .right .inner {
+  width: 100%;
+  margin-bottom: 70px;
+}
+#explore .right .inner h4 {
+  font-weight: bold;
+  font-size: 1.3em;
+  border-bottom: 2px solid #eeeeee;
+  padding-bottom: 10px;
+}
+#explore .right .inner p {
+  color: #7a7a7a;
+  margin: 20px 0;
+}
+#explore .right .inner i {
+  margin-right: 10px;
+  color: #7a7a7a;
+  font-size: 1.2em;
+}
+#explore .right .inner a {
+  color: #000;
+  margin: 20px 15px 20px 0;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: all 0.3s linear;
+}
+#explore .right .inner a i {
+  margin-left: 5px;
+  font-size: 1em;
+  color: #000;
+  transition: all 0.3s linear;
+}
+#explore .right .inner a:hover, #explore .right .inner a:hover i {
+  color: #ff565b;
+}
+
+#trending {
+  margin: 100px 0;
+}
+#trending .left {
+  padding-left: 17%;
+  transform: translateY(50%);
+}
+#trending .left .headText h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2.1rem;
+}
+#trending .left .headText h2 span {
+  color: #ff565b;
+}
+#trending .left .headText h2 span::before {
+  content: "";
+  display: inline-block;
+  width: 80px;
+  height: 2px;
+  background-color: #ff565b;
+  margin-right: 30px;
+  position: relative;
+  bottom: 10px;
+}
+#trending .left .mainText {
+  padding-right: 100px;
+}
+#trending .left .mainText p {
+  text-align: justify;
+  font-size: 0.9em;
+  margin: 20px 0;
+  color: #7a7a7a;
+}
+#trending .left .mainText .btnDiscover {
+  background-color: #ff565b;
+  font-size: 0.9em;
+  color: #fff;
+  transition: 0.3s all linear;
+  margin-top: 30px;
+}
+#trending .left .mainText .btnDiscover:hover {
+  background-color: rgba(0, 0, 0, 0.562);
+}
+
+#trending .right .imgHolder {
+  background: url("../images/int2.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 580px;
+  border-radius: 10px;
+  width: 60%;
+  position: relative;
+  left: -15px;
+}
+#trending .right .imgHolder::after {
+  content: "";
+  display: inline-block;
+  background: url("../images/int3.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 300px;
+  width: 280px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+}
+
+#trending .right .layout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ff565b;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  opacity: 0;
+}
+#trending .right .layout .text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+#trending .right .layout .text a,
+#trending .right .layout .text p {
+  color: #fff;
+  letter-spacing: 2px;
+  transition: all 0.3s linear;
+  margin-top: 10px;
+}
+#trending .right .layout .text a {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  transform: translateX(-10%);
+  display: block;
+}
+#trending .right .layout .text p {
+  transform: translateX(10%);
+}
+#trending .right .layout:hover {
+  opacity: 0.8;
+}
+#trending .right .layout:hover a, #trending .right .layout:hover p {
+  transform: translateX(0);
+}
+
+#contact {
+  background: url("../images/map.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 960px;
+  margin-top: 100px;
+  padding: 15% 10%;
+}
+#contact .wrapper .left {
+  background-color: #fff;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 50px;
+  position: relative;
+  left: 12px;
+}
+#contact .wrapper .left .top h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2.1rem;
+}
+#contact .wrapper .left .top h2 span {
+  color: #ff565b;
+}
+#contact .wrapper .left .top h2 span::before {
+  content: "";
+  display: inline-block;
+  width: 80px;
+  height: 2px;
+  background-color: #ff565b;
+  margin-right: 30px;
+  position: relative;
+  bottom: 10px;
+}
+#contact .wrapper .left .form input,
+#contact .wrapper .left .form textarea {
+  border-radius: 5px;
+  color: #7a7a7a;
+  font-size: 0.9em;
+  border: 1px solid #ddd;
+  margin: 10px 0;
+  padding: 10px;
+}
+#contact .wrapper .left .form input {
+  margin-right: 10px;
+}
+#contact .wrapper .left .form textarea {
+  width: 100%;
+}
+#contact .wrapper .left .form .btnSend {
+  background-color: #ff565b;
+  font-size: 0.9em;
+  color: #fff;
+  transition: 0.3s all linear;
+  margin-top: 30px;
+  width: 100%;
+}
+#contact .wrapper .left .form .btnSend:hover {
+  background-color: rgba(0, 0, 0, 0.562);
+}
+#contact .wrapper .right {
+  position: relative;
+  right: 12px;
+}
+#contact .wrapper .right iframe {
+  border-top-right-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
 }/*# sourceMappingURL=style.css.map */

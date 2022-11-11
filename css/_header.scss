@@ -1,0 +1,89 @@
+@use "./variables" as v;
+
+// START OF HEADER PART
+header {
+  background: url("../images/header.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 800px;
+  position: relative;
+
+  .layout {
+    background-color: rgba($color: #000, $alpha: 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  height: 100px;
+
+  .menu {
+    width: 70%;
+    display: flex;
+    padding-top: 10px;
+    li {
+      display: inline-block;
+      margin-left: 10px;
+      a {
+        color: #fff;
+        padding: 15px;
+        padding-top: 9px;
+        transition: 0.3s all linear;
+
+        &:hover {
+          color: v.$main-color;
+        }
+      }
+    }
+  }
+}
+
+.headerText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+
+  h6 {
+    font-weight: bold;
+    font-size: 1.4em;
+    letter-spacing: 3px;
+  }
+  h2 {
+    font-size: 3em;
+
+    span {
+      color: v.$main-color;
+    }
+  }
+  button {
+    background-color: #fff;
+    font-size: 0.9em;
+    color: v.$main-color;
+    transition: 0.3s all linear;
+    margin-top: 30px;
+
+    &:hover {
+      background-color: $main-color;
+      color: #fff;
+    }
+  }
+}
+
+.active {
+  color: $main-color !important;
+  border-top: 2px solid v.$main-color;
+  background-color: #fff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+// END OF HEADER PART
