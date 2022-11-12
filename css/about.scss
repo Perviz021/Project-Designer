@@ -1,0 +1,107 @@
+@import "./variables";
+
+// HEADER PART
+header {
+  background: url("../images/about-header.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 530px;
+
+  .layout {
+    .headerText {
+      width: 40%;
+      p {
+        margin-top: 25px;
+        font-size: 0.9em;
+        line-height: 1.8rem;
+      }
+    }
+  }
+}
+// END OF HEADER PART
+
+// START OF SERVICES
+#services {
+  position: relative;
+  top: -80px;
+
+  .service-item {
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba($color: #000000, $alpha: 0.3);
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+
+    i {
+      color: $main-color;
+      font-size: 3em;
+      margin-bottom: 25px;
+    }
+    h4 {
+      width: 100%;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+  }
+}
+// END OF SERVICES
+
+// START OF INTERIOR DESIGN
+#interior-design {
+  .top {
+    margin-bottom: 30px;
+
+    h2 {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 2.1rem;
+
+      &:nth-child(2) {
+        color: $main-color;
+
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 80px;
+          height: 2px;
+          background-color: $main-color;
+          margin-right: 30px;
+          position: relative;
+          bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+#interior-design {
+  .left {
+    height: 600px;
+    background: url("../images/int-design.jpg");
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px;
+  }
+  .right {
+    margin-left: 70px;
+    .inner {
+      width: 100%;
+      margin-bottom: 70px;
+
+      h4 {
+        font-weight: bold;
+        font-size: 1.3em;
+        padding-bottom: 10px;
+      }
+      p {
+        color: $text-color;
+
+        &:nth-child(2) {
+          margin: 0 0 50px 0;
+        }
+      }
+    }
+  }
+}
+// END OF INTERIOR DESIGN

@@ -6,7 +6,7 @@
 }
 
 body {
-  height: 4450px;
+  height: 4400px;
   overflow-x: hidden;
 }
 
@@ -57,6 +57,7 @@ nav .menu li a {
   color: #fff;
   padding: 15px;
   padding-top: 9px;
+  padding-bottom: 10px;
   transition: 0.3s all linear;
 }
 nav .menu li a:hover {
@@ -70,15 +71,16 @@ nav .menu li a:hover {
   transform: translate(-50%, -50%);
   text-align: center;
   color: #fff;
-  font-weight: bold;
 }
 .headerText h6 {
   font-weight: bold;
   font-size: 1.4em;
   letter-spacing: 3px;
+  font-weight: bold;
 }
 .headerText h2 {
   font-size: 3em;
+  font-weight: bold;
 }
 .headerText h2 span {
   color: #ff565b;
