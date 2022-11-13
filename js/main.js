@@ -9,3 +9,22 @@
 //     }
 //   });
 // }
+
+// let accordionItemHeaders = document.querySelectorAll(
+//   ".accordion .acrdItem .acrdHeader"
+// );
+
+// for (let i = 0; i < accordionItemHeaders.length; i++) {
+//   accordionItemHeaders[i].onclick = function () {
+//     this.css.outline = "none";
+//   };
+// }
+
+$(function () {
+  $(".owl-carousel").owlCarousel({
+    items: 2,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 4000,
+  });
+});
