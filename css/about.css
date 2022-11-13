@@ -59,7 +59,7 @@ header .layout .headerText p {
 }
 
 #interior-design .left {
-  height: 600px;
+  height: 400px;
   background: url("../images/int-design.jpg");
   background-size: cover;
   background-position: center center;
@@ -82,4 +82,79 @@ header .layout .headerText p {
 }
 #interior-design .right .inner p:nth-child(2) {
   margin: 0 0 50px 0;
+}
+#interior-design .right .inner .accordion-item {
+  color: #7a7a7a;
+  font-size: 0.9em;
+}
+
+#feedback {
+  margin-top: 100px;
+}
+#feedback .wrapper {
+  background: url("../images/about-feedback-bg.jpg");
+  background-size: contain;
+  background-position: center right;
+  background-repeat: no-repeat;
+  height: 500px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 100%;
+  padding: 30px 0;
+}
+#feedback .wrapper .feedback-item {
+  padding: 50px;
+  border-radius: 7.5px;
+  box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  position: relative;
+  background-color: #fff;
+  margin: 0 20px;
+  z-index: 999;
+}
+#feedback .wrapper .feedback-item::after {
+  content: "";
+  height: 100%;
+  width: 10px;
+  background-color: rgba(255, 86, 91, 0.5);
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 100%;
+  border-top-right-radius: 7.5px;
+  border-bottom-right-radius: 7.5px;
+}
+#feedback .wrapper .feedback-item::before {
+  content: "";
+  width: 96.7%;
+  height: 10px;
+  background-color: rgba(255, 86, 91, 0.5);
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  left: 10px;
+  border-bottom-left-radius: 7.5px;
+}
+#feedback .wrapper .feedback-item h4 {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+#feedback .wrapper .feedback-item p {
+  color: #7a7a7a;
+}
+#feedback .wrapper .feedback-item p:not(:first-of-type) {
+  font-size: 0.9em;
+}
+#feedback .wrapper .feedback-item i {
+  color: #ff565b;
+  font-size: 0.7em;
+}
+#feedback .wrapper .feedback-item i:not(:first-of-type) {
+  margin: 5px 0 40px 0;
+}
+#feedback .wrapper .feedback-item i:first-of-type {
+  font-size: 3em;
+  position: absolute;
+  top: -20px;
+  left: 33px;
 }/*# sourceMappingURL=about.css.map */
