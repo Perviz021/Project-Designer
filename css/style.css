@@ -97,7 +97,7 @@ nav .menu li a:hover {
   color: #fff;
 }
 
-.active {
+.activePage {
   color: #ff565b !important;
   border-top: 2px solid #ff565b;
   background-color: #fff;

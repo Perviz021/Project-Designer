@@ -26,5 +26,7 @@ $(function () {
     loop: true,
     autoplay: true,
     autoplayTimeout: 4000,
+    autoplayHoverPause: true,
+    smartSpeed: 500,
   });
 });
