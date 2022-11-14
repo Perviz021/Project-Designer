@@ -25,7 +25,7 @@ $(function () {
     items: 2,
     loop: true,
     autoplay: true,
-    autoplayTimeout: 4000,
+    autoplayTimeout: 3000,
     autoplayHoverPause: true,
     smartSpeed: 500,
   });
