@@ -1,0 +1,18 @@
+header {
+  background: url("../images/explore-header.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 530px;
+}
+header .layout {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+header .layout .headerText {
+  width: 40%;
+}
+header .layout .headerText p {
+  color: #ddd;
+  margin-top: 25px;
+  font-size: 0.9em;
+  line-height: 1.8rem;
+}/*# sourceMappingURL=explore.css.map */
