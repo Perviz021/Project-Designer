@@ -211,7 +211,8 @@ nav .menu li a:hover {
   color: #000;
   transition: all 0.3s linear;
 }
-#explore .right .inner a:hover, #explore .right .inner a:hover i {
+#explore .right .inner a:hover,
+#explore .right .inner a:hover i {
   color: #ff565b;
 }
 
@@ -325,7 +326,8 @@ nav .menu li a:hover {
 #trending .right .layout:hover {
   opacity: 0.8;
 }
-#trending .right .layout:hover a, #trending .right .layout:hover p {
+#trending .right .layout:hover a,
+#trending .right .layout:hover p {
   transform: translateX(0);
 }
 
@@ -400,7 +402,7 @@ nav .menu li a:hover {
 }
 
 footer {
-  margin-top: 100px;
+  margin: 100px 0 50px 0;
 }
 footer .footer-logo {
   height: 190px;
@@ -469,4 +471,4 @@ footer .go-top a i {
 }
 footer .go-top a:hover {
   color: #ff565b;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */

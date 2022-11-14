@@ -1,3 +1,7 @@
+body {
+  height: 3380px;
+}
+
 header {
   background: url("../images/explore-header.jpg");
   background-size: cover;
@@ -15,4 +19,139 @@ header .layout .headerText p {
   margin-top: 25px;
   font-size: 0.9em;
   line-height: 1.8rem;
+}
+
+#minimalistic-design {
+  margin: 200px 0 100px 0;
+}
+#minimalistic-design .top h2 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+#minimalistic-design .imgHolder {
+  width: 100%;
+  height: 625px;
+}
+#minimalistic-design .imgHolder img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+#minimalistic-design .project-info {
+  margin: 0 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 30px 40px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  position: relative;
+  bottom: 150px;
+}
+#minimalistic-design .project-info > div {
+  width: 100%/7;
+  text-align: center;
+}
+#minimalistic-design .project-info > div p {
+  color: #7a7a7a;
+  margin-bottom: 0;
+}
+#minimalistic-design .bottomText {
+  position: relative;
+  bottom: 50px;
+  width: 95%;
+}
+#minimalistic-design .bottomText p {
+  color: #7a7a7a;
+  font-size: 0.9em;
+}
+#minimalistic-design .img1, #minimalistic-design .img2 {
+  height: 500px;
+}
+#minimalistic-design .img1 img, #minimalistic-design .img2 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+#incredible-work .wrapper h2 {
+  font-weight: bold;
+}
+#incredible-work .wrapper p {
+  font-size: 0.9em;
+  margin: 20px 0 50px 0;
+  color: #7a7a7a;
+}
+#incredible-work .wrapper hr {
+  border: 1px solid #ddd;
+  margin-bottom: 50px;
+}
+#incredible-work .wrapper .right {
+  justify-content: flex-end;
+}
+#incredible-work .wrapper .left,
+#incredible-work .wrapper .right {
+  display: flex;
+  gap: 20px;
+}
+#incredible-work .wrapper .left img,
+#incredible-work .wrapper .right img {
+  width: 120px;
+  height: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 7.5px;
+}
+#incredible-work .wrapper .left .innerText a,
+#incredible-work .wrapper .right .innerText a {
+  color: #000;
+  font-weight: bold;
+  transition: all 0.2s linear;
+  margin-top: 35px;
+  display: inline-block;
+}
+#incredible-work .wrapper .left .innerText a:hover,
+#incredible-work .wrapper .right .innerText a:hover {
+  color: #ff565b;
+}
+#incredible-work .wrapper .left .innerText p,
+#incredible-work .wrapper .right .innerText p {
+  margin: 10px 0;
+}
+
+#hire {
+  margin: 80px 0;
+  background-color: rgb(44, 44, 44);
+  padding: 30px 0;
+}
+#hire .left {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#hire .left h2 {
+  color: #fff;
+  font-weight: bold;
+}
+#hire .right {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#hire .right button {
+  background-color: #fff;
+  font-size: 0.9em;
+  color: #ff565b;
+  transition: 0.3s all linear;
+  margin-top: 30px;
+  position: relative;
+  top: -14px;
+}
+#hire .right button:hover {
+  background-color: #ff565b;
+  color: #fff;
 }/*# sourceMappingURL=explore.css.map */
