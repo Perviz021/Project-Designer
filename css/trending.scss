@@ -1,0 +1,21 @@
+@import "./variables";
+
+// HEADER PART
+header {
+  background: url("../images/trending-header.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 580px;
+
+  .layout {
+    .headerText {
+      width: 40%;
+      p {
+        margin-top: 25px;
+        font-size: 0.9em;
+        line-height: 1.8rem;
+      }
+    }
+  }
+}
+// END OF HEADER PART

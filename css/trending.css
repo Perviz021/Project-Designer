@@ -1,0 +1,14 @@
+header {
+  background: url("../images/trending-header.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 580px;
+}
+header .layout .headerText {
+  width: 40%;
+}
+header .layout .headerText p {
+  margin-top: 25px;
+  font-size: 0.9em;
+  line-height: 1.8rem;
+}/*# sourceMappingURL=trending.css.map */
