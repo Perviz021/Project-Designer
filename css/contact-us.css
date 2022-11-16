@@ -3,6 +3,7 @@ header {
   background-size: cover;
   background-position: center center;
   height: 550px;
+  margin-bottom: 150px;
 }
 header .layout {
   background-color: rgba(0, 0, 0, 0.7);
@@ -14,4 +15,123 @@ header .layout .headerText p {
   margin-top: 25px;
   font-size: 1em;
   line-height: 1.8rem;
+}
+
+#map .container .outer {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+main {
+  margin: 100px 0;
+}
+main .wrapper {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  padding: 50px;
+  border-radius: 10px;
+}
+main .wrapper .left {
+  padding-top: 50px;
+}
+main .wrapper .left .topText h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2.1rem;
+}
+main .wrapper .left .topText h2:nth-child(2) {
+  color: #ff565b;
+}
+main .wrapper .left .topText h2:nth-child(2)::before {
+  content: "";
+  display: inline-block;
+  width: 80px;
+  height: 2px;
+  background-color: #ff565b;
+  margin-right: 20px;
+  position: relative;
+  bottom: 10px;
+}
+main .wrapper .left .form input,
+main .wrapper .left .form textarea {
+  border-radius: 5px;
+  color: #7a7a7a;
+  font-size: 0.9em;
+  border: 1px solid #ddd;
+  margin: 10px 0;
+  padding: 10px;
+}
+main .wrapper .left .form input {
+  margin-right: 10px;
+  width: 47%;
+}
+main .wrapper .left .form textarea {
+  width: 97%;
+}
+main .wrapper .left .form .btnSend {
+  background-color: #ff565b;
+  font-size: 0.9em;
+  color: #fff;
+  transition: 0.3s all linear;
+  margin-top: 30px;
+  width: 97%;
+}
+main .wrapper .left .form .btnSend:hover {
+  background-color: rgba(0, 0, 0, 0.562);
+}
+
+main .wrapper .right .inner {
+  width: 100%;
+  background-color: #ff565b;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+main .wrapper .right .inner i {
+  color: #fff;
+  font-size: 2.5em;
+}
+main .wrapper .right .inner h6 {
+  font-size: 1.1em;
+  color: #fff;
+  margin: 15px 0;
+  font-weight: bold;
+}
+main .wrapper .right .inner p {
+  font-size: 0.9em;
+  color: #fff;
+}
+
+#hire {
+  margin: 80px 0;
+  background-color: rgb(44, 44, 44);
+  padding: 30px 0;
+}
+#hire .left {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#hire .left h2 {
+  color: #fff;
+  font-weight: bold;
+}
+#hire .right {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#hire .right button {
+  background-color: #fff;
+  font-size: 0.9em;
+  color: #ff565b;
+  transition: 0.3s all linear;
+  margin-top: 30px;
+  position: relative;
+  top: -14px;
+}
+#hire .right button:hover {
+  background-color: #ff565b;
+  color: #fff;
 }/*# sourceMappingURL=contact-us.css.map */
