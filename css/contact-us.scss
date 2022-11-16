@@ -1,0 +1,22 @@
+@import "./variables";
+
+// HEADER PART STARTS
+header {
+  background: url("../images/contact-us-header.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 550px;
+
+  .layout {
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    .headerText {
+      width: 40%;
+      p {
+        margin-top: 25px;
+        font-size: 1em;
+        line-height: 1.8rem;
+      }
+    }
+  }
+}
+// HEADER PART ENDS

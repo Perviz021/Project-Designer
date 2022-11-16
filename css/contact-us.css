@@ -1,0 +1,17 @@
+header {
+  background: url("../images/contact-us-header.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 550px;
+}
+header .layout {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+header .layout .headerText {
+  width: 40%;
+}
+header .layout .headerText p {
+  margin-top: 25px;
+  font-size: 1em;
+  line-height: 1.8rem;
+}/*# sourceMappingURL=contact-us.css.map */
