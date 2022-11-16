@@ -11,4 +11,98 @@ header .layout .headerText p {
   margin-top: 25px;
   font-size: 0.9em;
   line-height: 1.8rem;
+}
+
+main {
+  margin: 200px 0 100px 0;
+}
+main .trending-item {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 29px;
+}
+main .trending-item p {
+  display: inline-block;
+  color: #fff;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ff565b;
+  z-index: 2;
+}
+main .trending-item a {
+  color: #fff;
+  display: block;
+  position: absolute;
+  bottom: -65px;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: #ff565b;
+  text-align: center;
+  transition: all 0.3s linear;
+}
+main .trending-item a h4 {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-bottom: 0;
+}
+main .trending-item a i {
+  margin-left: 30px;
+  font-size: 0.9em;
+}
+main .trending-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.5s linear;
+}
+main .trending-item:hover img {
+  transform: scale(1.1);
+}
+main .trending-item:hover a {
+  bottom: 0;
+}
+main .trending-item:hover p {
+  top: 0;
+  left: 0;
+}
+
+#hire {
+  margin: 80px 0;
+  background-color: rgb(44, 44, 44);
+  padding: 30px 0;
+}
+#hire .left {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#hire .left h2 {
+  color: #fff;
+  font-weight: bold;
+}
+#hire .right {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#hire .right button {
+  background-color: #fff;
+  font-size: 0.9em;
+  color: #ff565b;
+  transition: 0.3s all linear;
+  margin-top: 30px;
+  position: relative;
+  top: -14px;
+}
+#hire .right button:hover {
+  background-color: #ff565b;
+  color: #fff;
 }/*# sourceMappingURL=trending.css.map */
