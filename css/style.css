@@ -6,11 +6,12 @@
 }
 
 body {
-  height: 4400px;
+  min-height: 100vh;
   overflow-x: hidden;
 }
 
 html {
+  height: 100%;
   scroll-behavior: smooth;
 }
 
@@ -400,7 +401,8 @@ nav .menu li a:hover {
 }
 
 footer {
-  margin: 100px 0 50px 0;
+  margin: 100px 0;
+  padding-bottom: 50px;
 }
 footer .footer-logo {
   height: 190px;
