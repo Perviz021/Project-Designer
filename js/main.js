@@ -30,3 +30,13 @@ $(function () {
     smartSpeed: 500,
   });
 });
+
+let loader = document.querySelector("#loader");
+
+setTimeout(() => {
+  loader.style.display = "none";
+}, 3000);
+
+// window.addEventListener("load", function () {
+//   loader.style.display = "none";
+// });
