@@ -20,17 +20,6 @@
 //   };
 // }
 
-$(function () {
-  $(".owl-carousel").owlCarousel({
-    items: 2,
-    loop: true,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    autoplayHoverPause: true,
-    smartSpeed: 500,
-  });
-});
-
 let loader = document.querySelector("#loader");
 
 setTimeout(() => {
@@ -39,4 +28,11 @@ setTimeout(() => {
 
 // window.addEventListener("load", function () {
 //   loader.style.display = "none";
+// });
+
+// let scroll = document.querySelector(".scroll-to-top");
+// scroll.scrollIntoView({
+//   behaviour: "smooth",
+//   block: "center",
+//   inline: "end",
 // });
