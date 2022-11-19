@@ -25,3 +25,36 @@
     height: 80px;
   }
 }
+
+.scroll-to-top {
+  position: fixed;
+  right: 2%;
+  bottom: 2%;
+  display: inline-block;
+  background-color: rgb(255, 0, 0);
+  z-index: 3;
+  border-radius: 100%;
+  transition: all 0.3s;
+  opacity: 0;
+  pointer-events: none;
+
+  &:hover {
+    background-color: $main-color;
+  }
+
+  a {
+    color: #fff;
+    font-size: 1.5em;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.scroll-to-top.active {
+  opacity: 1;
+  pointer-events: auto;
+  bottom: 4%;
+}

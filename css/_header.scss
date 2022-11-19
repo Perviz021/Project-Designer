@@ -1,4 +1,4 @@
-@use "./variables" as v;
+@import "./variables";
 
 // START OF HEADER PART
 header {
@@ -22,25 +22,48 @@ nav {
   justify-content: space-between;
   flex-wrap: nowrap;
   height: 100px;
+  transition: all 0.4s;
 
   .menu {
-    width: 70%;
+    width: 64%;
     display: flex;
-    padding-top: 10px;
+    padding-top: 11px;
     li {
       display: inline-block;
-      margin-left: 10px;
+      margin-left: 14px;
       a {
         color: #fff;
-        padding: 15px;
-        padding-top: 9px;
-        padding-bottom: 10px;
+        padding: 10px 20px;
+        font-size: 0.9em;
         transition: 0.3s all linear;
 
         &:hover {
-          color: v.$main-color;
+          color: $main-color;
         }
       }
+    }
+  }
+}
+
+nav.sticky {
+  background-color: #2a2a2a;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  padding: 10px 8%;
+  height: 65px;
+
+  .navBrand {
+    padding-top: 0 !important;
+  }
+  .menu {
+    width: 63%;
+
+    a.activePage {
+      border-radius: 10px;
+      border-top: none;
     }
   }
 }
@@ -64,13 +87,13 @@ nav {
     font-weight: bold;
 
     span {
-      color: v.$main-color;
+      color: $main-color;
     }
   }
   button {
     background-color: #fff;
     font-size: 0.9em;
-    color: v.$main-color;
+    color: $main-color;
     transition: 0.3s all linear;
     margin-top: 30px;
 
@@ -83,9 +106,10 @@ nav {
 
 .activePage {
   color: $main-color !important;
-  border-top: 2px solid v.$main-color;
+  border-top: 2px solid $main-color;
   background-color: #fff;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  padding: 11px 20px !important;
 }
 // END OF HEADER PART

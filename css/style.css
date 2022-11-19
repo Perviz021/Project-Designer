@@ -44,25 +44,46 @@ nav {
   justify-content: space-between;
   flex-wrap: nowrap;
   height: 100px;
+  transition: all 0.4s;
 }
 nav .menu {
-  width: 70%;
+  width: 64%;
   display: flex;
-  padding-top: 10px;
+  padding-top: 11px;
 }
 nav .menu li {
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 14px;
 }
 nav .menu li a {
   color: #fff;
-  padding: 15px;
-  padding-top: 9px;
-  padding-bottom: 10px;
+  padding: 10px 20px;
+  font-size: 0.9em;
   transition: 0.3s all linear;
 }
 nav .menu li a:hover {
   color: #ff565b;
+}
+
+nav.sticky {
+  background-color: #2a2a2a;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  padding: 10px 8%;
+  height: 65px;
+}
+nav.sticky .navBrand {
+  padding-top: 0 !important;
+}
+nav.sticky .menu {
+  width: 63%;
+}
+nav.sticky .menu a.activePage {
+  border-radius: 10px;
+  border-top: none;
 }
 
 .headerText {
@@ -104,6 +125,7 @@ nav .menu li a:hover {
   background-color: #fff;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  padding: 11px 20px !important;
 }
 
 #search {
@@ -489,4 +511,35 @@ footer .go-top a:hover {
 #loader img {
   width: 80px;
   height: 80px;
+}
+
+.scroll-to-top {
+  position: fixed;
+  right: 2%;
+  bottom: 2%;
+  display: inline-block;
+  background-color: rgb(255, 0, 0);
+  z-index: 3;
+  border-radius: 100%;
+  transition: all 0.3s;
+  opacity: 0;
+  pointer-events: none;
+}
+.scroll-to-top:hover {
+  background-color: #ff565b;
+}
+.scroll-to-top a {
+  color: #fff;
+  font-size: 1.5em;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-to-top.active {
+  opacity: 1;
+  pointer-events: auto;
+  bottom: 4%;
 }/*# sourceMappingURL=style.css.map */
