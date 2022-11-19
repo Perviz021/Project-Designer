@@ -24,7 +24,7 @@ let loader = document.querySelector("#loader");
 
 setTimeout(() => {
   loader.style.display = "none";
-}, 3000);
+}, 1000);
 
 // window.addEventListener("load", function () {
 //   loader.style.display = "none";
@@ -36,3 +36,22 @@ setTimeout(() => {
 //   block: "center",
 //   inline: "end",
 // });
+
+let scroll = document.querySelector(".scroll-to-top");
+
+window.addEventListener("scroll", () => {
+  // SCROLL-To-Top
+  if (window.pageYOffset > 100) {
+    scroll.classList.add("active");
+  } else {
+    scroll.classList.remove("active");
+  }
+
+  // NAVBAR STICKY
+  let nav = document.querySelector("#top nav");
+  if (window.pageYOffset > 500) {
+    nav.classList.add("sticky");
+  } else {
+    nav.classList.remove("sticky");
+  }
+});
