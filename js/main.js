@@ -55,3 +55,6 @@ window.addEventListener("scroll", () => {
     nav.classList.remove("sticky");
   }
 });
+
+// MEDIA QUERY
+let menuBar = document.querySelector("header nav span");
