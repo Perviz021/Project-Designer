@@ -43,6 +43,16 @@ nav {
       }
     }
   }
+
+  span {
+    display: none;
+    i {
+      color: #fff;
+      font-size: 2em;
+      padding-top: 10px;
+      cursor: pointer;
+    }
+  }
 }
 
 nav.sticky {
@@ -104,12 +114,75 @@ nav.sticky {
   }
 }
 
-.activePage {
-  color: $main-color !important;
-  border-top: 2px solid $main-color;
-  background-color: #fff;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  padding: 11px 20px !important;
-}
 // END OF HEADER PART
+
+// FOR MOBILE PHONES, TABLETS
+@media screen and (max-width: 992px) {
+  header {
+    nav {
+      display: flex;
+      .navBrand {
+        display: inline-block;
+      }
+      .menu {
+        background-color: #2a2a2a;
+        border-radius: 10px;
+        padding: 15px 40px;
+        z-index: 10;
+        text-align: center;
+        width: 100%;
+        position: relative;
+        display: none;
+
+        ul {
+          width: 100%;
+          padding-left: 0 !important;
+          margin-bottom: 0 !important;
+
+          li {
+            width: 100%;
+            display: block;
+            margin-left: 0 !important;
+
+            a {
+              display: block;
+              border-bottom: 1px solid $text-color;
+              width: 100%;
+              margin-left: 0;
+              padding: 10px;
+              margin-bottom: 15px;
+            }
+
+            &:last-child a {
+              border-bottom: none;
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+      span {
+        display: inline-block;
+      }
+    }
+
+    .headerText {
+      transform: translateX(-50px);
+    }
+  }
+
+  .activePage {
+    color: $main-color !important;
+  }
+}
+
+// FOR LARGE DEVICES
+@media screen and (min-width: 993px) {
+  .activePage {
+    color: $main-color !important;
+    border-top: 2px solid $main-color;
+    background-color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 11px 20px !important;
+  }
+}
