@@ -46,11 +46,16 @@ nav {
 
   span {
     display: none;
+    background-color: $text-color;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    height: 44px;
+    margin-top: 10px;
+
     i {
       color: #fff;
-      font-size: 2em;
-      padding-top: 10px;
-      cursor: pointer;
+      font-size: 1.5em;
     }
   }
 }
@@ -66,7 +71,7 @@ nav.sticky {
   height: 65px;
 
   .navBrand {
-    padding-top: 0 !important;
+    padding-top: 12px !important;
   }
   .menu {
     width: 63%;
@@ -121,18 +126,33 @@ nav.sticky {
   header {
     nav {
       display: flex;
-      .navBrand {
-        display: inline-block;
+      overflow: hidden;
+      flex-wrap: wrap;
+      > div {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .navBrand {
+          display: inline-block;
+        }
+
+        span {
+          display: inline-block;
+        }
       }
       .menu {
-        background-color: #2a2a2a;
+        // background-color: #2a2a2a;
         border-radius: 10px;
-        padding: 15px 40px;
+        // padding: 15px 40px;
         z-index: 10;
         text-align: center;
         width: 100%;
         position: relative;
-        display: none;
+        top: 31px;
+        max-height: 0;
+        padding: 15px 40px;
+        transition: max-height 1s linear, background-color 0.3s linear;
 
         ul {
           width: 100%;
@@ -160,13 +180,37 @@ nav.sticky {
           }
         }
       }
-      span {
-        display: inline-block;
+    }
+
+    nav.sticky {
+      height: 70px;
+      > div {
+        .navBrand {
+          padding-top: 12px !important;
+        }
+        span {
+          margin-top: 0;
+        }
+      }
+      .menu {
+        width: 100%;
+
+        ul {
+          li {
+            a {
+              border-radius: 0px;
+
+              &.activePage {
+                border-radius: 0px;
+              }
+            }
+          }
+        }
       }
     }
 
     .headerText {
-      transform: translateX(-50px);
+      transform: translateX(-50%, -100%);
     }
   }
 

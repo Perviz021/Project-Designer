@@ -57,4 +57,21 @@ window.addEventListener("scroll", () => {
 });
 
 // MEDIA QUERY
+let nav = document.querySelector("#top nav");
 let menuBar = document.querySelector("header nav span");
+let menu = document.querySelector("header nav .menu");
+
+menuBar.addEventListener("click", function () {
+  if (menu.style.maxHeight == 0) {
+    menu.style.maxHeight = "800px";
+    menu.style.backgroundColor = "#2a2a2a";
+    // menu.style.paddingTop = "15px 40px";
+    nav.style.height = "385px";
+    menu.style.top = "0";
+  } else {
+    menu.style.maxHeight = null;
+    menu.style.backgroundColor = "transparent";
+    // menu.style.padding = "0 40px";
+    nav.style.height = "70px";
+  }
+});
