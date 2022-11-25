@@ -121,7 +121,17 @@ nav.sticky {
 
 // END OF HEADER PART
 
-// FOR MOBILE PHONES, TABLETS
+@media screen and (max-width: 1200px) {
+  header {
+    nav {
+      .menu {
+        li {
+          margin-left: -6px;
+        }
+      }
+    }
+  }
+}
 @media screen and (max-width: 992px) {
   header {
     nav {
@@ -210,7 +220,13 @@ nav.sticky {
     }
 
     .headerText {
-      transform: translateX(-50%, -100%);
+      transform: translate(-50%, -100%);
+      width: 100%;
+      padding: 0 15px;
+      h6 {
+        display: block;
+        font-size: 1.3em;
+      }
     }
   }
 
@@ -228,5 +244,27 @@ nav.sticky {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     padding: 11px 20px !important;
+  }
+
+  header {
+    nav.sticky {
+      .menu {
+        width: 68%;
+
+        li {
+          margin-left: -13px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 530px) {
+  header {
+    .headerText {
+      h2 {
+        padding: 0 50px;
+      }
+    }
   }
 }
