@@ -1,4 +1,4 @@
-@use "./variables" as v;
+@import "./variables";
 
 // START OF SEARCH PART
 #search {
@@ -36,7 +36,7 @@
     width: 100%;
     border-radius: 5px;
     color: #fff;
-    background-color: v.$main-color;
+    background-color: $main-color;
     transition: 0.3s all linear;
     margin: 20px 0;
     font-size: 0.9em;
@@ -47,3 +47,20 @@
   }
 }
 // END OF SEARCH PART
+
+@media screen and (max-width: 992px) {
+  #search {
+    .wrapper {
+      display: block;
+      > div {
+        width: 100%;
+
+        input,
+        select {
+          padding: 10px;
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+}

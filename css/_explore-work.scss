@@ -81,3 +81,39 @@
   }
 }
 // END OF EXPLORE
+
+@media screen and (max-width: 992px) {
+  #explore-work {
+    margin-top: -50px;
+    .right {
+      margin-top: 50px;
+      margin-left: 0;
+      width: 100%;
+
+      .inner {
+        margin-bottom: 20px;
+        h4 {
+          margin-bottom: 20px;
+        }
+        > div {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+
+          p,
+          a {
+            width: 40%;
+          }
+          p {
+            margin: 0;
+
+            &:nth-child(3) {
+              position: relative;
+              bottom: 35px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

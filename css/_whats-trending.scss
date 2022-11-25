@@ -4,32 +4,32 @@
 
 #whats-trending {
   margin: 100px 0;
+  .headText {
+    h2 {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 2.1rem;
 
-  .left {
-    padding-left: 17%;
-    transform: translateY(50%);
-    .headText {
-      h2 {
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: 2.1rem;
+      &:nth-child(2) {
+        color: $main-color;
 
-        &:nth-child(2) {
-          color: $main-color;
-
-          &::before {
-            content: "";
-            display: inline-block;
-            width: 80px;
-            height: 2px;
-            background-color: $main-color;
-            margin-right: 30px;
-            position: relative;
-            bottom: 10px;
-          }
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 80px;
+          height: 2px;
+          background-color: $main-color;
+          margin-right: 30px;
+          position: relative;
+          bottom: 10px;
         }
       }
     }
+  }
+  .left {
+    padding-left: 17%;
+    transform: translateY(50%);
+
     .mainText {
       padding-right: 100px;
       p {
@@ -134,3 +134,25 @@
   }
 }
 // END OF TRENDING
+
+@media screen and (max-width: 992px) {
+  #whats-trending {
+    .headText {
+      margin-left: 20px;
+    }
+
+    .left {
+      padding-left: 20px;
+      transform: translate(0);
+
+      .mainText {
+        .btnDiscover {
+          margin-top: 10px;
+        }
+      }
+    }
+    .right {
+      display: none;
+    }
+  }
+}
