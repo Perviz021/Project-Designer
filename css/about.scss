@@ -9,11 +9,38 @@ header {
 
   .layout {
     .headerText {
-      width: 40%;
+      width: 50%;
       p {
         margin-top: 25px;
         font-size: 0.9em;
         line-height: 1.8rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 993px) {
+  header {
+    .layout {
+      .headerText {
+        transform: translate(-50%, -50%);
+        width: 70%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  header {
+    height: 350px;
+    .layout {
+      .headerText {
+        h2 {
+          font-size: 2em;
+        }
+        p {
+          margin: 15px 0;
+          line-height: 1.5rem;
+        }
       }
     }
   }
@@ -28,7 +55,7 @@ header {
   .service-item {
     height: 150px;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba($color: #000000, $alpha: 0.3);
+    box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.3);
     text-align: center;
     background-color: #fff;
     padding: 30px;
@@ -42,6 +69,14 @@ header {
       width: 100%;
       font-weight: bold;
       font-size: 1.2em;
+    }
+  }
+}
+
+@media screen and (max-width: 993px) {
+  #services {
+    .service-item {
+      margin-bottom: 20px;
     }
   }
 }
@@ -106,6 +141,37 @@ header {
         color: $text-color;
         font-size: 0.9em;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 993px) {
+  #interior-design {
+    .left {
+      height: 500px;
+      margin-bottom: 30px;
+    }
+    .right {
+      margin-left: 0;
+
+      .inner {
+        p {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #interior-design {
+    .top {
+      h2 {
+        font-size: 1.3rem;
+      }
+    }
+    .left {
+      height: 350px;
     }
   }
 }
@@ -192,6 +258,15 @@ header {
   }
 }
 
+@media screen and (max-width: 768px) {
+  #feedback {
+    .wrapper {
+      .feedback-item {
+        height: 300px;
+      }
+    }
+  }
+}
 // END OF FEEDBACK PART
 
 // HIRE SECTION STARTS
@@ -233,4 +308,12 @@ header {
   }
 }
 
+@media screen and (max-width: 993px) {
+  #hire {
+    .left,
+    .right {
+      justify-content: center;
+    }
+  }
+}
 // HIRE SECTION ENDS

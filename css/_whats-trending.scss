@@ -9,6 +9,7 @@
       text-transform: uppercase;
       font-weight: bold;
       font-size: 2.1rem;
+      width: 90%;
 
       &:nth-child(2) {
         color: $main-color;
@@ -28,12 +29,11 @@
   }
   .left {
     padding-left: 17%;
-    transform: translateY(50%);
+    transform: translateY(40%);
 
     .mainText {
       padding-right: 100px;
       p {
-        text-align: justify;
         font-size: 0.9em;
         margin: 20px 0;
         color: $text-color;
@@ -59,7 +59,7 @@
       background: url("../images/int2.jpg");
       background-size: cover;
       background-position: center center;
-      height: 580px;
+      height: 540px;
       border-radius: 10px;
       width: 60%;
       position: relative;
@@ -137,13 +137,31 @@
 
 @media screen and (max-width: 992px) {
   #whats-trending {
-    .headText {
-      margin-left: 20px;
-    }
-
     .left {
       padding-left: 20px;
       transform: translate(0);
+
+      .headText {
+        margin-left: 20px;
+      }
+
+      .mainText {
+        padding-right: 20px;
+        .btnDiscover {
+          margin-top: 10px;
+        }
+      }
+    }
+    .right {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #whats-trending {
+    .left {
+      transform: translateY(20%);
 
       .mainText {
         .btnDiscover {
@@ -152,7 +170,21 @@
       }
     }
     .right {
-      display: none;
+      .imgHolder {
+        height: 500px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #whats-trending {
+    .left {
+      .headText {
+        h2 {
+          font-size: 1.3em;
+        }
+      }
     }
   }
 }

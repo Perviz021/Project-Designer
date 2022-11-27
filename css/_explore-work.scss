@@ -117,3 +117,36 @@
     }
   }
 }
+
+@media screen and (max-width: 576px) {
+  #explore-work {
+    .top {
+      h2 {
+        font-size: 1.3em;
+      }
+    }
+    .left {
+      height: 500px;
+    }
+
+    .right {
+      .inner {
+        > div {
+          p {
+            font-size: 1em;
+            width: 100%;
+
+            &:nth-child(3) {
+              margin-top: 40px;
+            }
+          }
+          a {
+            width: 60%;
+            margin-right: auto;
+            font-size: 1em;
+          }
+        }
+      }
+    }
+  }
+}

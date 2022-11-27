@@ -18,6 +18,34 @@ header {
     }
   }
 }
+
+@media screen and (max-width: 993px) {
+  header {
+    .layout {
+      .headerText {
+        transform: translate(-50%, -50%);
+        width: 70%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  header {
+    height: 350px;
+    .layout {
+      .headerText {
+        width: 100%;
+        h2 {
+          font-size: 2em;
+        }
+        p {
+          margin: 15px 0 0 0;
+          line-height: 1.5rem;
+        }
+      }
+    }
+  }
+}
 // END OF HEADER PART
 
 // MAIN STARTS
@@ -83,6 +111,21 @@ main {
     }
   }
 }
+
+@media screen and (max-width: 993px) {
+  main {
+    .trending-item.exterior-decor {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  main {
+    .trending-item.exterior-decor {
+      display: block;
+    }
+  }
+}
 // MAIN ENDS
 
 // HIRE SECTION STARTS
@@ -119,6 +162,14 @@ main {
         background-color: $main-color;
         color: #fff;
       }
+    }
+  }
+}
+@media screen and (max-width: 993px) {
+  #hire {
+    .left,
+    .right {
+      justify-content: center;
     }
   }
 }

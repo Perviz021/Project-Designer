@@ -89,3 +89,32 @@ footer {
   }
 }
 // END OF FOOTER
+
+@media screen and (max-width: 1200px) {
+  footer {
+    .inner3 {
+      position: relative;
+      left: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 993px) {
+  footer {
+    text-align: center;
+
+    .inner {
+      margin-bottom: 40px;
+
+      &.inner3 {
+        left: 0;
+      }
+    }
+
+    .go-top {
+      a {
+        float: none;
+      }
+    }
+  }
+}

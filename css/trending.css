@@ -13,6 +13,27 @@ header .layout .headerText p {
   line-height: 1.8rem;
 }
 
+@media screen and (max-width: 993px) {
+  header .layout .headerText {
+    transform: translate(-50%, -50%);
+    width: 70%;
+  }
+}
+@media screen and (max-width: 767px) {
+  header {
+    height: 350px;
+  }
+  header .layout .headerText {
+    width: 100%;
+  }
+  header .layout .headerText h2 {
+    font-size: 2em;
+  }
+  header .layout .headerText p {
+    margin: 15px 0 0 0;
+    line-height: 1.5rem;
+  }
+}
 main {
   margin: 200px 0 100px 0;
 }
@@ -73,6 +94,16 @@ main .trending-item:hover p {
   left: 0;
 }
 
+@media screen and (max-width: 993px) {
+  main .trending-item.exterior-decor {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  main .trending-item.exterior-decor {
+    display: block;
+  }
+}
 #hire {
   margin: 80px 0;
   background-color: rgb(44, 44, 44);
@@ -105,4 +136,11 @@ main .trending-item:hover p {
 #hire .right button:hover {
   background-color: #ff565b;
   color: #fff;
+}
+
+@media screen and (max-width: 993px) {
+  #hire .left,
+#hire .right {
+    justify-content: center;
+  }
 }/*# sourceMappingURL=trending.css.map */

@@ -5,7 +5,7 @@ header {
   height: 530px;
 }
 header .layout .headerText {
-  width: 40%;
+  width: 50%;
 }
 header .layout .headerText p {
   margin-top: 25px;
@@ -13,6 +13,24 @@ header .layout .headerText p {
   line-height: 1.8rem;
 }
 
+@media screen and (max-width: 993px) {
+  header .layout .headerText {
+    transform: translate(-50%, -50%);
+    width: 70%;
+  }
+}
+@media screen and (max-width: 767px) {
+  header {
+    height: 350px;
+  }
+  header .layout .headerText h2 {
+    font-size: 2em;
+  }
+  header .layout .headerText p {
+    margin: 15px 0;
+    line-height: 1.5rem;
+  }
+}
 #services {
   position: relative;
   top: -80px;
@@ -20,7 +38,7 @@ header .layout .headerText p {
 #services .service-item {
   height: 150px;
   border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   text-align: center;
   background-color: #fff;
   padding: 30px;
@@ -36,6 +54,11 @@ header .layout .headerText p {
   font-size: 1.2em;
 }
 
+@media screen and (max-width: 993px) {
+  #services .service-item {
+    margin-bottom: 20px;
+  }
+}
 #interior-design .top {
   margin-bottom: 30px;
 }
@@ -88,6 +111,26 @@ header .layout .headerText p {
   font-size: 0.9em;
 }
 
+@media screen and (max-width: 993px) {
+  #interior-design .left {
+    height: 500px;
+    margin-bottom: 30px;
+  }
+  #interior-design .right {
+    margin-left: 0;
+  }
+  #interior-design .right .inner p {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  #interior-design .top h2 {
+    font-size: 1.3rem;
+  }
+  #interior-design .left {
+    height: 350px;
+  }
+}
 #feedback {
   margin-top: 100px;
   height: 500px;
@@ -163,6 +206,11 @@ header .layout .headerText p {
   left: 33px;
 }
 
+@media screen and (max-width: 768px) {
+  #feedback .wrapper .feedback-item {
+    height: 300px;
+  }
+}
 #hire {
   margin: 80px 0;
   background-color: rgb(44, 44, 44);
@@ -195,4 +243,11 @@ header .layout .headerText p {
 #hire .right button:hover {
   background-color: #ff565b;
   color: #fff;
+}
+
+@media screen and (max-width: 993px) {
+  #hire .left,
+#hire .right {
+    justify-content: center;
+  }
 }/*# sourceMappingURL=about.css.map */

@@ -20,11 +20,38 @@ header {
     }
   }
 }
+
+@media screen and (max-width: 993px) {
+  header {
+    .layout {
+      .headerText {
+        transform: translate(-50%, -50%);
+        width: 70%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  header {
+    height: 350px;
+    .layout {
+      .headerText {
+        h2 {
+          font-size: 2em;
+        }
+        p {
+          margin: 15px 0 0 0;
+          line-height: 1.5rem;
+        }
+      }
+    }
+  }
+}
 // HEADER ENDS
 
 // MINIMALISTIC DESIGN STARTS
 #minimalistic-design {
-  margin: 200px 0 100px 0;
+  margin: 150px 0 100px 0;
 
   .top {
     h2 {
@@ -89,6 +116,65 @@ header {
     @extend .img1;
   }
 }
+
+@media screen and (max-width: 993px) {
+  #minimalistic-design {
+    .imgHolder {
+      height: 500px;
+    }
+
+    .project-info {
+      display: flex;
+      flex-wrap: wrap;
+      position: static;
+      box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.3);
+      margin: 30px 0;
+      > div {
+        width: 100%;
+        margin-bottom: 30px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .bottomText {
+      position: static;
+      width: 100%;
+    }
+    .img1 {
+      margin: 40px 0 20px 0;
+    }
+    .img2 {
+      margin: 20px 0 20px 0;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  #minimalistic-design {
+    .imgHolder {
+      height: 400px;
+    }
+    .top {
+      h2 {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  #minimalistic-design {
+    .top {
+      h2 {
+        font-size: 1.3rem;
+      }
+    }
+    .imgHolder {
+      height: 300px;
+    }
+  }
+}
 // MINIMALISTIC DESIGN ENDS
 
 // INCREDIBLE WORK STARTS
@@ -140,6 +226,28 @@ header {
     }
   }
 }
+
+@media screen and (max-width: 993px) {
+  #incredible-work {
+    .wrapper {
+      .left {
+        margin-bottom: 15px;
+      }
+      .left,
+      .right {
+        .innerText {
+          a {
+            margin-top: 0;
+          }
+        }
+        img {
+          width: 70px;
+          height: 70px;
+        }
+      }
+    }
+  }
+}
 // INCREDIBLE WORK ENDS
 
 // HIRE SECTION STARTS
@@ -181,4 +289,12 @@ header {
   }
 }
 
+@media screen and (max-width: 993px) {
+  #hire {
+    .left,
+    .right {
+      justify-content: center;
+    }
+  }
+}
 // HIRE SECTION ENDS

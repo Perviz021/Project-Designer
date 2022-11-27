@@ -17,8 +17,26 @@ header .layout .headerText p {
   line-height: 1.8rem;
 }
 
+@media screen and (max-width: 993px) {
+  header .layout .headerText {
+    transform: translate(-50%, -50%);
+    width: 70%;
+  }
+}
+@media screen and (max-width: 767px) {
+  header {
+    height: 350px;
+  }
+  header .layout .headerText h2 {
+    font-size: 2em;
+  }
+  header .layout .headerText p {
+    margin: 15px 0 0 0;
+    line-height: 1.5rem;
+  }
+}
 #minimalistic-design {
-  margin: 200px 0 100px 0;
+  margin: 150px 0 100px 0;
 }
 #minimalistic-design .top h2 {
   text-align: center;
@@ -73,6 +91,51 @@ header .layout .headerText p {
      object-fit: cover;
   border-radius: 10px;
 }
+@media screen and (max-width: 993px) {
+  #minimalistic-design .imgHolder {
+    height: 500px;
+  }
+  #minimalistic-design .project-info {
+    display: flex;
+    flex-wrap: wrap;
+    position: static;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin: 30px 0;
+  }
+  #minimalistic-design .project-info > div {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #minimalistic-design .project-info > div:last-child {
+    margin-bottom: 0;
+  }
+  #minimalistic-design .bottomText {
+    position: static;
+    width: 100%;
+  }
+  #minimalistic-design .img1, #minimalistic-design .img2 {
+    margin: 40px 0 20px 0;
+  }
+  #minimalistic-design .img2 {
+    margin: 20px 0 20px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  #minimalistic-design .imgHolder {
+    height: 400px;
+  }
+  #minimalistic-design .top h2 {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #minimalistic-design .top h2 {
+    font-size: 1.3rem;
+  }
+  #minimalistic-design .imgHolder {
+    height: 300px;
+  }
+}
 #incredible-work .wrapper h2 {
   font-weight: bold;
 }
@@ -118,6 +181,20 @@ header .layout .headerText p {
   margin: 10px 0;
 }
 
+@media screen and (max-width: 993px) {
+  #incredible-work .wrapper .left {
+    margin-bottom: 15px;
+  }
+  #incredible-work .wrapper .left .innerText a,
+#incredible-work .wrapper .right .innerText a {
+    margin-top: 0;
+  }
+  #incredible-work .wrapper .left img,
+#incredible-work .wrapper .right img {
+    width: 70px;
+    height: 70px;
+  }
+}
 #hire {
   margin: 80px 0;
   background-color: rgb(44, 44, 44);
@@ -150,4 +227,11 @@ header .layout .headerText p {
 #hire .right button:hover {
   background-color: #ff565b;
   color: #fff;
+}
+
+@media screen and (max-width: 993px) {
+  #hire .left,
+#hire .right {
+    justify-content: center;
+  }
 }/*# sourceMappingURL=explore.css.map */

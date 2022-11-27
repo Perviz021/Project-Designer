@@ -25,12 +25,12 @@ nav {
   transition: all 0.4s;
 
   .menu {
-    width: 64%;
+    width: 68%;
     display: flex;
     padding-top: 11px;
     li {
       display: inline-block;
-      margin-left: 14px;
+      margin-left: 20px;
       a {
         color: #fff;
         padding: 10px 20px;
@@ -248,11 +248,54 @@ nav.sticky {
 
   header {
     nav.sticky {
+      padding: 10px 7%;
       .menu {
         width: 68%;
 
         li {
-          margin-left: -13px;
+          margin-left: 20px;
+
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1222px) {
+  header {
+    nav.sticky {
+      .menu {
+        width: 72%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1155px) {
+  header {
+    nav.sticky {
+      .menu {
+        width: 74%;
+
+        li {
+          margin-left: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1124px) {
+  header {
+    nav.sticky {
+      .menu {
+        width: 75%;
+
+        li {
+          margin-left: 0px;
         }
       }
     }

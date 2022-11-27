@@ -18,6 +18,7 @@
       padding: 50px;
       position: relative;
       left: 12px;
+      height: 545px;
 
       .top {
         h2 {
@@ -42,6 +43,10 @@
         }
       }
       .form {
+        display: flex;
+        height: 100%;
+        flex-wrap: wrap;
+
         input,
         textarea {
           border-radius: 5px;
@@ -52,7 +57,11 @@
           padding: 10px;
         }
         input {
-          margin-right: 10px;
+          width: 48%;
+
+          &:nth-child(odd) {
+            margin-right: 10px;
+          }
         }
         textarea {
           width: 100%;
@@ -75,12 +84,102 @@
     .right {
       position: relative;
       right: 12px;
-
+      height: 545px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      .gmap_canvas {
+        height: 545px;
+        width: 100%;
+      }
       iframe {
-        border-top-right-radius: 10px !important;
-        border-bottom-right-radius: 10px !important;
+        height: 545px;
+        width: 100%;
       }
     }
   }
 }
 // END OF CONTACT SECTION
+
+@media screen and (min-width: 993px) {
+  #contact {
+    .wrapper {
+      .right {
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1112px) {
+  #contact {
+    .wrapper {
+      .left {
+        padding: 30px;
+        .form {
+          .btnSend {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #contact {
+    padding: 50px 10%;
+    height: 1245px;
+    .wrapper {
+      .left {
+        padding: 30px 50px;
+        position: static;
+        height: 580px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+
+        .form {
+          input {
+            width: 100%;
+            margin-right: 0px !important;
+          }
+
+          textarea {
+            height: 110px;
+          }
+          .btnSend {
+            margin-top: 10px;
+          }
+        }
+      }
+      .right {
+        // right: 0;
+        position: static;
+        overflow: visible;
+        .mapouter {
+          width: 100%;
+          .gmap_canvas {
+            width: 100%;
+            iframe {
+              border-radius: 10px;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 632px) {
+  #contact {
+    .wrapper {
+      .left {
+        .top {
+          h2 {
+            font-size: 1.3em;
+          }
+        }
+      }
+    }
+  }
+}

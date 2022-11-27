@@ -17,6 +17,27 @@ header .layout .headerText p {
   line-height: 1.8rem;
 }
 
+@media screen and (max-width: 993px) {
+  header .layout .headerText {
+    transform: translate(-50%, -50%);
+    width: 70%;
+  }
+}
+@media screen and (max-width: 767px) {
+  header {
+    height: 350px;
+  }
+  header .layout .headerText {
+    width: 90%;
+  }
+  header .layout .headerText h2 {
+    font-size: 2em;
+  }
+  header .layout .headerText p {
+    margin: 15px 0 0 0;
+    line-height: 1.5rem;
+  }
+}
 #map .container .outer {
   overflow: hidden;
   border-radius: 10px;
@@ -102,6 +123,31 @@ main .wrapper .right .inner p {
   color: #fff;
 }
 
+@media screen and (max-width: 993px) {
+  main .wrapper .left {
+    margin-bottom: 50px;
+  }
+  main .wrapper .left .form::after {
+    content: "";
+    display: block;
+    border: 1px solid #dfdede;
+    position: relative;
+    top: 20px;
+  }
+  main .wrapper .left .form input {
+    margin-right: 0;
+    width: 100%;
+  }
+  main .wrapper .left .form textarea,
+main .wrapper .left .form .btnSend {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  main .wrapper .left .topText h2 {
+    font-size: 1.3rem;
+  }
+}
 #hire {
   margin: 80px 0;
   background-color: rgb(44, 44, 44);
@@ -134,4 +180,11 @@ main .wrapper .right .inner p {
 #hire .right button:hover {
   background-color: #ff565b;
   color: #fff;
+}
+
+@media screen and (max-width: 993px) {
+  #hire .left,
+#hire .right {
+    justify-content: center;
+  }
 }/*# sourceMappingURL=contact-us.css.map */
