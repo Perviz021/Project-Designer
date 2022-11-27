@@ -30,8 +30,8 @@
   position: fixed;
   right: 2%;
   bottom: 2%;
-  display: inline-block;
-  background-color: rgb(255, 0, 0);
+  display: none;
+  background-color: $text-color;
   z-index: 3;
   border-radius: 100%;
   transition: all 0.3s;
@@ -39,7 +39,7 @@
   pointer-events: none;
 
   &:hover {
-    background-color: $main-color;
+    background-color: #555;
   }
 
   a {
@@ -57,4 +57,10 @@
   opacity: 1;
   pointer-events: auto;
   bottom: 4%;
+}
+
+@media screen and (min-width: 993px) {
+  .scroll-to-top {
+    display: inline-block;
+  }
 }
