@@ -267,6 +267,23 @@ header {
     }
   }
 }
+
+@media screen and (max-width: 420px) {
+  #feedback {
+    .wrapper {
+      .feedback-item {
+        > div {
+          padding: 30px;
+          p:not(:first-of-type) {
+            font-size: 0.8em !important;
+            position: relative;
+            bottom: 25px;
+          }
+        }
+      }
+    }
+  }
+}
 // END OF FEEDBACK PART
 
 // HIRE SECTION STARTS
