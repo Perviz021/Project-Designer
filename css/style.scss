@@ -30,7 +30,7 @@
   position: fixed;
   right: 2%;
   bottom: 2%;
-  display: none;
+  display: inline-block;
   background-color: $text-color;
   z-index: 3;
   border-radius: 100%;
@@ -57,10 +57,4 @@
   opacity: 1;
   pointer-events: auto;
   bottom: 4%;
-}
-
-@media screen and (min-width: 993px) {
-  .scroll-to-top {
-    display: inline-block;
-  }
 }

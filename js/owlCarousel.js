@@ -7,6 +7,7 @@ $(function () {
     autoplayHoverPause: true,
     smartSpeed: 500,
     responsiveClass: true,
+
     //responsive carousel
     responsive: {
       //if width is more than 0px

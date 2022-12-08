@@ -68,6 +68,7 @@ menuBar.addEventListener("click", function () {
     // menu.style.paddingTop = "15px 40px";
     nav.style.height = "385px";
     menu.style.top = "0";
+    menu.style.width = "100%";
   } else {
     menu.style.maxHeight = null;
     menu.style.backgroundColor = "transparent";

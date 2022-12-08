@@ -7,7 +7,7 @@
 
 body {
   min-height: 100vh;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 html {
@@ -861,7 +861,7 @@ footer .go-top a:hover {
   position: fixed;
   right: 2%;
   bottom: 2%;
-  display: none;
+  display: inline-block;
   background-color: #7a7a7a;
   z-index: 3;
   border-radius: 100%;
@@ -886,10 +886,4 @@ footer .go-top a:hover {
   opacity: 1;
   pointer-events: auto;
   bottom: 4%;
-}
-
-@media screen and (min-width: 993px) {
-  .scroll-to-top {
-    display: inline-block;
-  }
 }/*# sourceMappingURL=style.css.map */
